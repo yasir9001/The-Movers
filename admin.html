@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <link href="admin-style.css" rel="stylesheet" type="text/css">
+    
+    <title>Admin Panel-The Movers</title>
+</head>
+
+<body>
+    <h1>Admin Panel</h1>
+    
+
+    <div class="main">
+        
+        
+        <div class="left-side">
+            
+            
+            <h1>Modify Database</h1>
+            
+            <div class="insert">
+                
+                <form action="http://www.example.com/form.php" method="post">
+                    <fieldset>
+                        <legend>Add a Recored</legend>
+                        
+                            <label class="title" for="name">Name:</label>
+                            <input type="text" name="name" id="name">
+                            
+                            <br />
+                            
+                            
+                            <label class="title" for="surname">Surname:</label>
+                            <input type="text" name="surname" id="surname">
+                            
+                            <br />
+                        
+                            
+                            <label class="title" for="email">Email:</label>
+                            <input type="text" name="email" id="email">
+                            <br />
+                            
+                            
+                            <label class="title" for="cont">Contact:</label>
+                            <input type="text" name="contact" id="cont">
+                            <br />
+                            
+                            
+                            <label class="title" for="pass">Password:</label>
+                            <input type="text" name="password" id="pass">
+                            
+                            <div class="submit"><input type="submit" value="  Add  " /></div>
+                    
+                    </fieldset>
+                            
+                        
+                            
+                            
+                </form>
+            </div>
+            
+            
+            
+            
+                <div class="delete">
+                
+                <form action="http://www.example.com/form.php" method="post">
+                    <fieldset>
+                        <legend>Remove a Recored</legend>
+                        
+                            <label class="title" for="name">Delete where ID is:</label>
+                            <input type="text" name="del-id" id="name">
+                            
+                            <div class="submit"><input type="submit" value="Delete" /></div>
+                    
+                    </fieldset>
+                            
+                        
+                            
+                            
+                </form>
+            </div>
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="right-side">
+            
+            <h1>Data Base</h1>
+            <div class="record-table">
+                 <table width="200" border="1">
+                  <tr>
+                    <th>ID</th>
+                    <th>User Name</th>
+                    <th>Surname</th>
+                    <th>Password</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                  </tr>
+<p>
+  <?php
+while($result=mysqli_fetch_array($record))
+{
+echo"<tr>";
+echo"<td>".$result['ID']."</td>";
+echo"<td>".$result['username']."</td>";
+echo"<td>".$result['surname']."</td>";
+echo"<td>".$result['password']."</td>";
+echo"<td>".$result['email']."</td>";
+echo"<td>".$result['contact'].</td>";
+}
+?>
+</p>
+                 </table>
+
+            </div>
+            
+        </div>
+    
+    
+        
+        
+        
+        
+        
+    
+    </div>   
+</div>
+    
+    
+        <div class="queries">
+            <table width="200" border="1">
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Query</th>
+                  </tr>
+<p>
+  <?php
+while($result=mysqli_fetch_array($record))
+{
+echo"<tr>";
+echo"<td>".$result['name']."</td>";
+echo"<td>".$result['email']."</td>";
+echo"<td class="msg">".$result['query']."</td>";
+}
+?>
+</p>
+        </div>
+    
+    
+    
+    
+    
+</body>
+
+</html>

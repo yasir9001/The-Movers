@@ -1,0 +1,269 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 18, 2018, 1:33:50 AM
+    Author     : Yasir
+*/
+
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+
+}
+@font-face{
+    font-family: 'newfont';
+    src: url(./fonts/good.ttf);
+}
+
+/* header styling*/
+
+.header{
+    width:100%;
+    position: fixed;
+    background-color: #ffba66;
+    box-shadow:0px 4px 8px #FFDCB2;
+    z-index: 5;
+    
+}
+
+.logo ul li,.navbar ul li{
+    display: inline;
+}
+.logo{
+    display:inline-block;
+    width:auto;
+    color: white;
+    font-size: 16px;
+    word-spacing:0px;
+    letter-spacing: 2px;
+    font-family: cursive;
+    opacity:.7;
+}
+.logo:hover{
+    opacity:1;
+    font-size:16.5px;
+
+}
+.logo ul li img {
+    vertical-align: middle;
+}
+.navbar ul li a{
+    padding:10px 20px;
+    text-decoration: none;
+    color: #000000;
+    opacity:0.7;
+    
+    
+}
+
+.navbar ul li a:hover{
+    background-color: rgba(0,0,0,.2);
+    border-radius:5px;
+    color:white;
+    transition:.5s;
+        
+    opacity:1;
+}
+
+
+.logo ul {
+    margin:0px;
+}
+.navbar{
+    display:inline-block;
+    width: auto; 
+    float: right;
+}
+
+
+/* box-1*/
+
+div.box-1{
+    height:300px;
+    padding-top: 50px;
+    width:100%;
+    background: url(./images/main.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.box-1 h1, div.box-1 p{
+    margin:0px auto;;
+    width:fit-content;
+}
+div.box-1 h1{
+    margin-top:20px;
+    font-weight:normal;
+    font-size:800%;
+    font-family:newfont;
+    color:white;
+    text-shadow: 0px 0px 10px black;
+
+}
+div.box-1 p{
+    font-size:40px;
+    margin-top:40px;
+    color:white;
+    text-shadow: 0px 0px 10px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+
+/* box - 2 */
+
+div.box-2{
+    width:99%;
+    margin: 0px auto;
+    height: 470px;
+    padding-top:100px;
+}
+div.box-2 img{
+    height:200px;
+}
+div.box-2 div{
+    float:left;
+    width:23%;
+    margin: 0px 60px;
+    text-align: center;
+    padding:0px 20px;
+    background-color: rgba(255,255,255,.9);
+    border-radius:5px;
+    box-shadow: 5px 5px 20px #000000;
+}
+
+
+/* FOR BOX-3 */
+
+div.box-3{
+    width:100%;
+    background: url(./images/mover.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:350px;
+    text-align: center;
+}
+div.box-3 p{
+    margin:0px auto;
+    width:660px;
+    font-size:300%;
+    word-spacing: 20px;
+    padding-top:80px;
+    line-height:1.6em;
+    background-color:white;
+    box-shadow: 0px 0px 100px 100px white;
+    color:#527CA6;
+    font-family:cursive;
+    text-shadow: 0px 0px 3px #527CA6;
+}
+div.box-3 span{
+    font-weight: bold;
+}
+
+
+/* for any queries*/
+
+div.queries{
+    width:100%;
+    height:600px;
+    text-align: center;
+    background-color: #F6D144;
+}
+
+
+
+div.queries form{
+    width: 60%;
+    margin:0px auto;
+    margin-top:100px;
+}
+
+div.queries textarea{
+    width: 99%;
+    border-radius: 3px;
+    padding-left: 4px;
+    border:1px solid grey;
+    box-shadow: 3px 3px 10px black;
+    background-color:rgba(255,255,255,.4);
+}
+div.queries input{
+    width:99%;
+    margin-bottom:30px;
+    padding:10px 0px;
+    border-radius: 3px;
+    border:1px solid grey;
+    box-shadow: 3px 3px 10px black;
+    padding-left: 4px;
+    background-color:rgba(255,255,255,.4);
+}
+label.to-indent{
+    float: left;
+    width: 100px;
+    text-align: left;
+    padding-right: 10px;
+}
+div.button{
+    text-align: right;
+}
+div.queries button{
+    border:none;
+    border-radius:5px;
+    padding:10px 30px;
+    background-color: tomato;
+    margin-top:10px;
+    font-size:20px;
+}
+div.button button:focus{
+    position: relative;
+    top:2px;
+    left:2px;
+}
+
+
+div.button button:hover{
+    color:white;
+    transition: .3s;
+}
+div.queries span{
+    font-size:32px;
+}
+
+/*for  footer */
+div.footer{
+    margin-top: 0px;
+}
+
+div.address{
+    width:80%;
+    margin:0px auto;
+    height:212px;
+    border-bottom:1px solid grey;
+}
+
+div.address div{
+    float:left;
+    width:20%;  
+    height:200px;
+    padding:0px 21px;
+    padding-bottom:10px;
+    margin:0px auto;
+}
+div.address img{
+    height:70px;
+}
+
+div.copy-right{
+    background-color:#E8E8E8;
+    height:100px;
+    text-align: center;
+    margin-top:50px;
+}
+.map
+{
+    width: 100%;
+}

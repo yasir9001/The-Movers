@@ -1,0 +1,227 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 23, 2018, 1:01:18 AM
+    Author     : Yasir
+*/
+
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+
+}
+@font-face{
+    font-family: 'newfont';
+    src: url(./../../fonts/good.ttf);
+}
+
+
+/* header styling*/
+
+.header{
+    width:100%;
+    position: fixed;
+    background-color: #ffba66;
+    box-shadow:0px 4px 8px #FFDCB2;
+    z-index: 5;
+    
+}
+
+.logo ul li,.navbar ul li{
+    display: inline;
+}
+.logo{
+    display:inline-block;
+    width:auto;
+    color: white;
+    font-size: 16px;
+    word-spacing:0px;
+    letter-spacing: 2px;
+    font-family: cursive;
+    opacity:.7;
+}
+.logo:hover{
+    opacity:1;
+    font-size:16.5px;
+
+}
+.logo ul li img {
+    vertical-align: middle;
+}
+.navbar ul li a{
+    padding:10px 20px;
+    text-decoration: none;
+    color: #000000;
+    opacity:0.7;
+    
+    
+}
+
+.navbar ul li a:hover{
+    background-color: rgba(0,0,0,.2);
+    border-radius:5px;
+    color:white;
+    transition:.5s;
+        
+    opacity:1;
+}
+
+
+.logo ul {
+    margin:0px;
+}
+.navbar{
+    display:inline-block;
+    width: auto; 
+    float: right;
+}
+
+
+/* title imge */
+
+div.box-1{
+    height:300px;
+    padding-top: 50px;
+    width:100%;
+    background: url(./../../images/main.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.box-1 h1, div.box-1 p{
+    margin:0px auto;;
+    width:fit-content;
+}
+div.box-1 h1{
+    margin-top:20px;
+    font-weight:normal;
+    font-size:800%;
+    font-family:newfont;
+    color:white;
+    text-shadow: 0px 0px 10px black;
+
+}
+div.box-1 p{
+    font-size:40px;
+    margin-top:40px;
+    color:white;
+    text-shadow: 0px 0px 10px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+/* styling for left side content*/
+
+
+div.left-side{
+    width:80%;
+    float:left;
+    height: 306px;
+}
+
+
+div.left-side> div.intro {
+    width:80%;
+    margin: 0px 30px 0px auto;
+    text-align: justify;
+}
+
+div.left-side>div.intro>p{
+width:80%;
+}
+
+div.intro p,div.intro ul{
+    font-size:120%;
+    line-height: 2em;
+    width:80%;
+}
+
+
+/*for rigth side navbar*/
+div.right-side{
+    padding-top:15px;
+   margin-top:80px;
+    width:15%;
+    float:left;
+    background-color: #cccccc;
+}
+
+div.right-side a{
+    padding:10px 0px 10px 5px;
+    border-radius:5px;
+    display:block;
+    text-decoration:none;
+    color:green;
+}
+
+
+div.navbar-right  a:hover{
+    color: #cc6a29;
+    background-color:rgba(0,0,0,.2);
+}
+div.navbar-right> a{
+    font-weight:bold;
+    font-size:20px;
+}
+
+div.right-side li{
+    color:green;
+}
+div.navbar-right ul{
+    list-style-type: none;
+}
+div.navbar-right>ul{
+    padding:0px;
+}
+
+div.intro h1{
+    color: #cc6a29;
+    line-height: 2em;
+    font-size:250%;
+}
+
+
+
+
+/*for  footer */
+
+div.footer{
+    margin-top:0px;
+}
+
+div.address{
+    width:80%;
+    margin:0px auto;
+    height:212px;
+    border-bottom:1px solid grey;
+}
+
+div.address div{
+    float:left;
+    width:20%;  
+    height:200px;
+    padding:0px 21px;
+    padding-bottom:10px;
+    margin:0px auto;
+}
+div.address img{
+    height:70px;
+}
+
+div.copy-right{
+    background-color:#E8E8E8;
+    height:100px;
+    text-align: center;
+    margin-top:50px;
+}
+
+div.content-child-1{
+    height:600px;
+}
+iframe{
+    margin-top: 1385px;
+}

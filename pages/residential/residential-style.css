@@ -1,0 +1,289 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 22, 2018, 1:45:26 PM
+    Author     : Yasir
+*/
+
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+
+}
+@font-face{
+    font-family: 'newfont';
+    src: url(./../../fonts/good.ttf);
+}
+
+
+/* header styling*/
+
+.header{
+    width:100%;
+    position: fixed;
+    background-color: #ffba66;
+    box-shadow:0px 4px 8px #FFDCB2;
+    z-index: 5;
+    
+}
+
+.logo ul li,.navbar ul li{
+    display: inline;
+}
+.logo{
+    display:inline-block;
+    width:auto;
+    color: white;
+    font-size: 16px;
+    word-spacing:0px;
+    letter-spacing: 2px;
+    font-family: cursive;
+    opacity:.7;
+}
+.logo:hover{
+    opacity:1;
+    font-size:16.5px;
+
+}
+.logo ul li img {
+    vertical-align: middle;
+}
+.navbar ul li a{
+    padding:10px 20px;
+    text-decoration: none;
+    color: #000000;
+    opacity:0.7;
+    
+    
+}
+
+.navbar ul li a:hover{
+    background-color: rgba(0,0,0,.2);
+    border-radius:5px;
+    color:white;
+    transition:.5s;
+        
+    opacity:1;
+}
+
+
+.logo ul {
+    margin:0px;
+}
+.navbar{
+    display:inline-block;
+    width: auto; 
+    float: right;
+}
+
+
+/* title imge */
+
+div.box-1{
+    height:300px;
+    padding-top: 50px;
+    width:100%;
+    background: url(./../../images/main.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.box-1 h1, div.box-1 p{
+    margin:0px auto;;
+    width:fit-content;
+}
+div.box-1 h1{
+    margin-top:20px;
+    font-weight:normal;
+    font-size:800%;
+    font-family:newfont;
+    color:white;
+    text-shadow: 0px 0px 10px black;
+
+}
+div.box-1 p{
+    font-size:40px;
+    margin-top:40px;
+    color:white;
+    text-shadow: 0px 0px 10px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+/* styling for left side navidation bar*/
+
+
+div.service-bar-left{
+    width:15%;
+    float:left;
+    background-color:#cccccc;
+}
+
+
+div.service-bar-left >div > ul{
+    padding:0px 12px;
+    list-style: none;
+}
+div.service-bar-left div>ul>li{
+    color:green;
+}
+
+div.service-bar-left >div>ul>li>ul{  /* targets nested ul*/
+    list-style:none;
+    padding-left:20px;
+    padding-bottom:10px;
+}
+
+div.service-bar-left > div>ul>li>ul li{  /* targets li of nested ul*/
+}
+
+div.service-bar-left > div> ul  a{
+    padding:10px 0px 10px 5px;
+    border-radius:5px;
+    display:block;
+    text-decoration:none;
+    color:green;
+}
+
+
+div.service-bar-left >div> ul > li > a{
+    font-weight:bold;
+    font-size:20px;
+}
+div.service-bar-left >div>ul  a:hover{
+    color: #cc6a29;
+    background-color:rgba(0,0,0,.2);
+}
+
+
+
+
+
+/* styling for nav bar and title image ends here*/
+
+
+
+
+
+
+div.right-side{
+    width:82%;
+    float:left;
+    margin-left:25px;
+}
+div.commercial-box-1{
+    width:100%;
+    font-size:120%;
+    line-height: 1.6em;
+}
+div.commercial-box-1 p,h1{
+    width:95%;
+    padding-left:60px;
+}
+div.commercial-box-1 h1{
+    color:#cc6a29;
+}
+
+/* for image below commercial description*/
+/* Styling for content-child-1*/
+
+div.content-child-1{
+   height: 458px;
+   background-color:#CCCCCC;
+}
+
+div.content-child-1 div.child-1-img{
+    width:fit-content;
+    float:left;
+}
+
+div.content-child-1 div.child-1-img img {
+    width:100%;
+}
+div.content-child-1 div.child-1-text ul{
+    width:59%;
+    padding:0px;
+    padding-top:40px;
+    
+    list-style: disc;
+    float:right;
+    line-height: 2em;
+    font-size:120%;
+}
+
+
+
+div.content-child-1 span{
+    font-size:300%;
+    margin-left:50px;
+    color: #cc6a29;
+}
+/* content-child-1 styling ends here*/
+
+
+/* styling for child-3 (paragraphs)*/
+
+div.child-3 p{
+    margin:0px;
+    padding:20px 10px;
+    font-size:120%;
+    background-color:#CCCCCC;
+    line-height: 2em;
+}
+
+/* styling for trust depth*/
+
+div.trust-depth{
+    width:100%;
+    font-size:120%;
+    line-height: 1.6em;
+}
+
+div.trust-depth p,h1{
+    width:95%;
+    padding-left:60px;
+}
+div.trust-depth h1{
+    color:#cc6a29;
+}
+
+
+/*for  footer */
+
+div.footer{
+    margin-top:0px;
+}
+
+div.address{
+    width:80%;
+    margin:0px auto;
+    height:212px;
+    border-bottom:1px solid grey;
+}
+
+div.address div{
+    float:left;
+    width:20%;  
+    height:200px;
+    padding:0px 21px;
+    padding-bottom:10px;
+    margin:0px auto;
+}
+div.address img{
+    height:70px;
+}
+
+div.copy-right{
+    background-color:#E8E8E8;
+    height:100px;
+    text-align: center;
+    margin-top:50px;
+}
+
+div.content-child-1{
+    height:715px;
+}
